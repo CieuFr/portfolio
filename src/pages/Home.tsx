@@ -1,4 +1,4 @@
-import ProjectList from "../components/ProjectList";
+import ShaderScene from "../components/shader-scene";
 
 function Home() {
   return (
@@ -7,7 +7,7 @@ function Home() {
       <p className="text-lg text-muted-foreground">
         Découvrez mes projets, mon parcours et mes articles.
       </p>
-      <ProjectList />
+      <ShaderScene></ShaderScene>
     </div>
   );
 }
