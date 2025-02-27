@@ -5,7 +5,6 @@ import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
 import Articles from "./pages/Articles";
 import ArticleDetail from "./pages/ArticleDetail";
-import ProjectList from "./components/ProjectList";
 import ProjectDetail from "./components/ProjectDetail";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/articles/:id" element={<ArticleDetail />} />
-        <Route path="/" element={<ProjectList />} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
       </Routes>
     </Layout>
