@@ -11,6 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "http://cieufr.github.io/portfolio",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
