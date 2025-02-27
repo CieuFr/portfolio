@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "exemple-projet",
+    "title": "Exemple de Projet",
+    "description": "Ceci est un exemple de projet avec du contenu markdown",
+    "date": "2023-12-15",
+    "tags": ["React", "Vite", "TypeScript"]
+  },
+  {
+    "slug": "second-projet",
+    "title": "Second Projet",
+    "description": "Description du second projet avec des fonctionnalités intéressantes",
+    "date": "2023-11-20",
+    "tags": ["React", "API", "CSS"]
+  },
+  {
+    "slug": "troisieme-projet",
+    "title": "Troisième Projet",
+    "description": "Un autre projet avec une description détaillée des fonctionnalités",
+    "date": "2023-10-05",
+    "tags": ["TypeScript", "React Router", "Styled Components"]
+  }
+]
+
