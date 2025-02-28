@@ -1,19 +1,19 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import ProjectCard from "./ProjectCard";
-import type { Project } from "../types/Project";
+import ArticleCard from "./ArticleCard";
+import type { Article } from "../types/Article";
 
-const ProjectList = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
+const ArticleList = () => {
+  const [Articles, setArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Charger les métadonnées des projets
-    fetch("/projects-metadata.json")
+    fetch("/articles-metadata.json")
       .then((response) => response.json())
       .then((data) => {
-        setProjects(data);
+        setArticles(data);
         setLoading(false);
       })
       .catch((error) => {
@@ -23,18 +23,18 @@ const ProjectList = () => {
   }, []);
 
   if (loading) {
-    return <div className="loading">Chargement des projets...</div>;
+    return <div className="loading">Chargement des articles...</div>;
   }
 
   return (
     <div className="container">
       <div className="project-grid">
-        {projects.map((project) => (
-          <ProjectCard key={project.slug} project={project} />
+        {Articles.map((Article) => (
+          <ArticleCard key={Article.slug} Article={Article} />
         ))}
       </div>
     </div>
   );
 };
 
-export default ProjectList;
+export default ArticleList;

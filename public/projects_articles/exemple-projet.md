@@ -23,6 +23,6 @@ Le contenu de ce fichier est stocké dans le dossier `/public/projects_articles`
 
 ```jsx
 function MonComposant() {
-  return <div>Ceci est un exemple de composant React</div>
+  return <div>Ceci est un exemple de composant React</div>;
 }
-
+```

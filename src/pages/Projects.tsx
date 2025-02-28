@@ -7,7 +7,6 @@ function Projects() {
       <p className="text-lg text-muted-foreground mb-8">
         Découvrez les projets sur lesquels j'ai travaillé.
       </p>
-      {/* Ici, vous pouvez ajouter une liste ou une grille de vos projets */}
       <ProjectList />
     </div>
   );
